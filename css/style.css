@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+}
+/* Encabezado ············································································································*/
+.gridPadre {
+  width: 99%;
+  margin: 1px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header  header header"
+    "seccionPrimera seccionPrimera seccionPrimera seccionPrimera"
+    "seccionSegunda seccionSegunda seccionSegunda seccionSegunda"
+    "formulario formulario formulario formulario"
+    "footer footer footer footer";
+  border: solid 1px;
+}
+.logo {
+  width: 100px;
+  margin: 16px 4px 1px 1px;
+  border-radius: 10px;
+  transform: translateX(30px);
+}
+.imagenIndex {
+  height: 156px;
+  padding: 10px;
+  border-radius: 17px;
+  margin-top: 15px;
+}
+header {
+  grid-area: header;
+  background-color: rgb(240, 221, 146);
+  width: 100%;
+}
+.navegador {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1px 2px 1px -6px;
+  width: 100%;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.navegador li {
+  list-style: none;
+  padding: 10px;
+}
+.navegador li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.navegador li a:hover {
+  background-color: rgba(154, 224, 148, 0.445);
+}
+/* Primera seccion """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
+.seccionPrimera {
+  display: flex;
+  grid-area: seccionPrimera;
+  background-color: rgb(255, 255, 197);
+  flex-direction: column;
+  align-items: center;
+}
+.seccionPrimera h1 {
+  margin: 20px 1px 10px 1px;
+  font-size: 2rem;
+}
+.seccionPrimera p {
+  max-width: 900px;
+  font-size: 1.5rem;
+}
+/* Seccion segunda······································································································· */
+.seccionSegunda {
+  grid-area: seccionSegunda;
+  background-color: rgb(214, 228, 170);
+}
+.seccionSegunda div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.seccionSegunda section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seccionSegunda section h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(65, 63, 66);
+}
+.seccionSegunda section h2:hover {
+  transform: scale(1.1);
+}
+.seccionSegunda section h3 {
+  font-size: 1rem;
+  color: rgb(65, 63, 66);
+}
+.seccionSegunda section h3:hover {
+  transform: scale(1.1);
+}
+.seccionSegunda section p {
+  margin-top: 20px;
+  color: black;
+  font-size: 20px;
+}
+.seccionSegunda section p:hover {
+  transform: scale(1.1);
+}
+
+/* Formulario"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.formulario {
+  display: flex;
+  grid-area: formulario;
+  flex-direction: column;
+  align-items: center;
+  grid-area: formulario;
+  margin: 20px 1px 10px 1px;
+}
+.formulario h4 {
+  margin: 10px 1px 15px 1px;
+}
+.formulario input {
+  padding: 5px;
+  margin: 3px 3px 10px 3px;
+  border-radius: 10px;
+}
+.cajaIndex {
+  width: 250px;
+  height: 70px;
+  transition: 0.8s;
+}
+.cajaIndex:hover {
+  height: 140px;
+  width: 200px;
+  padding: 10px;
+  background-color: rgba(78, 80, 82, 0.171);
+}
+.botonIndex {
+  box-shadow: 0ch 2px black;
+  transition: all 0.5;
+}
+.botonIndex:hover {
+  transform: translateY(3px);
+}
+/* Footer··············································································································· */
+.footer {
+  grid-area: footer;
+  background-image: linear-gradient(
+    to left,
+    rgb(130, 149, 75),
+    rgb(186, 189, 66),
+    rgb(239, 211, 69),
+    rgb(255, 239, 130)
+  );
+}
+.redes {
+  display: inline-block;
+  margin-left: 568px;
+  margin-top: -27px;
+  padding: 20px;
+}
+.redes i {
+  color: black;
+  padding: 15px;
+  font-size: 30px;
+}
+.redes a i:hover {
+  transform: scale(2);
+}
+footer {
+  max-width: 100%;
+}
+/* Biocosmetica ********************************************************************** ******************************/
+.gridBiocosmetica {
+  display: grid;
+  max-width: 99%;
+  margin: 1px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "seccionBiocosmetica1 seccionBiocosmetica1 seccionBiocosmetica1 seccionBiocosmetica1"
+    "seccionBiocosmetica2 seccionBiocosmetica2 seccionBiocosmetica2 seccionBiocosmetica2"
+    "footer footer footer footer";
+  align-content: center;
+  justify-items: center;
+  border: solid 1px;
+}
+.nav {
+  grid-area: nav;
+  width: 100%;
+}
+/* Primera seccion de biocosmetica """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.seccionBiocosmetica1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: seccionBiocosmetica1;
+}
+.seccionBiocosmetica1 h2 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.seccionBiocosmetica1 h3 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.seccionBiocosmetica1 p {
+  max-width: 870px;
+}
+
+/* Segunda seccion de biocosmetica """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+.seccionBiocosmetica2 {
+  display: flex;
+  grid-area: seccionBiocosmetica2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250, 244, 183);
+  width: 100%;
+}
+.imagenesBiocosmetica1 {
+  display: flex;
+}
+.imagenesBiocosmetica1 img {
+  max-width: 280px;
+  max-height: 300px;
+  padding: 50px;
+}
+.piePagina {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.piePagina p {
+  padding: 115px;
+  margin-top: -110px;
+  font-size: 20px;
+  color: black;
+}
+.piePagina p:hover {
+  color: rgb(248, 94, 179);
+}
+
+.imagenesBiocosmetica2 {
+  display: flex;
+  margin-top: -114px;
+}
+.imagenesBiocosmetica2 img {
+  max-width: 280px;
+  max-height: 300px;
+  padding: 50px;
+}
+.footer {
+  width: 100%;
+}
+
+/*  Catalogo****************************************************************************************************** */
+.gridCatalogo {
+  width: 99%;
+  margin: 1px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "sectionCatalogo1 sectionCatalogo1 sectionCatalogo1 sectionCatalogo1"
+    "sectionCatalogo2 sectionCatalogo2 sectionCatalogo2 sectionCatalogo2"
+    "footer footer footer footer";
+  align-content: center;
+  border: solid 1px;
+}
+.nav {
+  grid-area: nav;
+}
+.sectionCatalogo1 {
+  grid-area: sectionCatalogo1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 244, 183);
+}
+.sectionCatalogo1 img {
+  padding: 40px;
+  height: 180px;
+  margin-top: 50px;
+}
+.sectionCatalogo1 img:hover {
+  transform: scale(1.5);
+}
+.rellenoCatalogo {
+  display: flex;
+}
+.rellenoCatalogo p {
+  padding: 2px;
+  margin: -7px 52px 55px 0px;
+  font-size: 20px;
+}
+.rellenoCatalogo h4 {
+  margin: -4px 66px 1px 2px;
+  padding: 2px;
+  transition: all 0.8s;
+}
+.rellenoCatalogo h4:hover {
+  transform: scale(2);
+}
+.sectionCatalogo2 {
+  grid-area: sectionCatalogo2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 244, 183);
+}
+.sectionCatalogo2 img {
+  width: 260px;
+  height: 180px;
+  padding: 40px;
+  margin-left: -15px;
+}
+.sectionCatalogo2 img:hover {
+  transform: scale(1.5);
+}
+.pieFoto {
+  display: flex;
+  flex-direction: row;
+}
+.pieFoto p {
+  padding: 20px;
+  margin: 1px 1px 1px 42px;
+  font-size: 20px;
+}
+.pieFoto h4 {
+  padding: 20px;
+  margin: 1px 1px 1px 50px;
+  transition: all 0.8s;
+}
+.pieFoto h4:hover {
+  transform: scale(2);
+}
+/* Preparados **************************************************************************** """"""""""""""""""""""""*/
+.gridPreparados {
+  width: 99%;
+  margin: 1px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "sectionPreparados1 sectionPreparados1 sectionPreparados1 sectionPreparados1"
+    "sectionPreparados2 sectionPreparados2 sectionPreparados2 sectionPreparados2"
+    "sectionPreparados3 sectionPreparados3 sectionPreparados3 sectionPreparados3"
+    "foooter foooter foooter foooter";
+  border: solid 1px;
+  background-color: rgb(250, 244, 183);
+}
+header {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+}
+.sectionPreparados1 {
+  grid-area: sectionPreparados1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 23px 112px -76px 194px;
+}
+.montecito {
+  text-decoration: underline;
+  margin-top: 3vh;
+  margin-bottom: 10px;
+}
+.sectionPreparados2 {
+  grid-area: sectionPreparados2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 26px;
+  margin: 1px 2px 1px -63px;
+  width: 100%;
+}
+.modificadorImagenes {
+  width: 300px;
+  height: 180px;
+  padding: 15px;
+  margin-top: 50px;
+}
+.sectionPreparados3 {
+  grid-area: sectionPreparados3;
+  display: flex;
+  margin: 15px -266px 1px -35px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.editorTexto {
+  border: solid 1px;
+  border-radius: 3px;
+  overflow: scroll;
+  width: 300px;
+  height: 250px;
+  padding: 5px;
+  margin: 1px 10px 20px 10px;
+}
+/*contacto********************************************************************************************************** */
+.gridContacto {
+  width: 99%;
+  margin: 1px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sectionContacto sectionContacto sectionContacto"
+    "footer footer footer";
+  border: solid 1px;
+}
+.nav {
+  grid-area: nav;
+}
+.sectionContacto {
+  grid-area: sectionContacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 1px 1px 1px;
+  background-color: rgb(218, 229, 208);
+}
+
+.primerFormulario {
+  display: flex;
+  margin-bottom: 20px;
+}
+.primerFormulario input {
+  background-color: rgb(249, 235, 200);
+}
+.segundoFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.segundoFormulario input {
+  background-color: rgb(249, 235, 200);
+}
+
+/* responsive desing media query mobile last*/
+@media (max-width: 600px) {
+  .navegador li a {
+    font-size: 10px;
+    margin-right: 25px;
+    padding: 1px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    transform: translateX(60px);
+  }
+  .imagenIndex {
+    height: 160px;
+    width: 160px;
+    padding: 3px;
+    border-radius: 17px;
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+  .redes {
+    display: inline-block;
+    margin-left: 190px;
+    margin-top: -27px;
+    padding: 20px;
+  }
+  .redes i {
+    color: black;
+    padding: 15px;
+    font-size: 30px;
+  }
+  .seccionPrimera p {
+    max-width: 400px;
+    font-size: 1rem;
+  }
+  .seccionSegunda section p {
+    margin-top: 20px;
+    color: black;
+    font-size: 15px;
+    max-width: 400px;
+  }
+  /* responsive desing media query mobile last biocosmetica 600px ***************************************************** */
+  .imagenesBiocosmetica2 {
+    display: none;
+  }
+  .piePagina {
+    display: none;
+  }
+  .imagenesBiocosmetica1 img {
+    max-width: 145px;
+    padding: 15px;
+  }
+  /* responsive desing media query mobile last catalogo 600px ***************************************************** * */
+  .gridCatalogo {
+    max-width: 600px;
+  }
+  .sectionCatalogo1 {
+    display: flex;
+  }
+  .sectionCatalogo1 img {
+    padding: 10px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 21px;
+  }
+  .rellenoCatalogo p {
+    padding: 2px;
+    margin: -7px 52px 55px 27px;
+    font-size: 13px;
+  }
+  .rellenoCatalogo h4 {
+    display: none;
+  }
+  .sectionCatalogo2 {
+    display: flex;
+  }
+  .sectionCatalogo2 img {
+    padding: 1px;
+    width: 144px;
+    height: 105px;
+    margin-left: 32px;
+  }
+  .pieFoto p {
+    padding: 20px;
+    margin: 1px 1px 1px 62px;
+    font-size: 13px;
+  }
+  .pieFoto h4 {
+    display: none;
+  }
+  /* responsive desing media query mobile last preparados 600px ***************************************************** */
+  .sectionPreparados1 {
+    grid-area: sectionPreparados1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 175px -76px 194px;
+  }
+  .modificadorImagenes {
+    width: 154px;
+    height: 121px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-right: -80px;
+}
+.editorTexto {
+  border: solid 1px;
+  border-radius: 3px;
+  overflow: scroll;
+  width: 377px;
+  height: 301px;
+  padding: 3px;
+  margin: -31px -28px 28px 38px;
+}
+}
