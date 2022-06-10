@@ -179,6 +179,10 @@ header {
 footer {
   max-width: 100%;
 }
+/* Agregando git y transformaciones */
+.aplicandoGit:hover{
+  transform: scale(1.5);
+}
 /* Biocosmetica ********************************************************************** ******************************/
 .gridBiocosmetica {
   display: grid;
