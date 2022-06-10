@@ -33,7 +33,6 @@
 }
 header {
   grid-area: header;
-  background-color: rgb(240, 221, 146);
   width: 100%;
 }
 .navegador {
