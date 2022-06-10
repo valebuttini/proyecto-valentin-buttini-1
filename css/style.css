@@ -34,6 +34,14 @@
 header {
   grid-area: header;
   width: 100%;
+  /* modifique con la rama el header */
+  background-image: linear-gradient(
+    to left,
+    rgb(130, 149, 75),
+    rgb(186, 189, 66),
+    rgb(239, 211, 69),
+    rgb(255, 239, 130)
+  );
 }
 .navegador {
   display: flex;
@@ -179,17 +187,8 @@ footer {
   max-width: 100%;
 }
 /* Agregando git y transformaciones */
-.aplicandoGit:hover{
+.aplicandoGit:hover {
   transform: scale(1.5);
-}
-.header{
-  background-image: linear-gradient(
-    to left,
-    rgb(130, 149, 75),
-    rgb(186, 189, 66),
-    rgb(239, 211, 69),
-    rgb(255, 239, 130)
-  );
 }
 /* Biocosmetica ********************************************************************** ******************************/
 .gridBiocosmetica {
@@ -570,14 +569,14 @@ header {
     padding: 15px;
     margin-top: 50px;
     margin-right: -80px;
-}
-.editorTexto {
-  border: solid 1px;
-  border-radius: 3px;
-  overflow: scroll;
-  width: 377px;
-  height: 301px;
-  padding: 3px;
-  margin: -31px -28px 28px 38px;
-}
+  }
+  .editorTexto {
+    border: solid 1px;
+    border-radius: 3px;
+    overflow: scroll;
+    width: 377px;
+    height: 301px;
+    padding: 3px;
+    margin: -31px -28px 28px 38px;
+  }
 }
