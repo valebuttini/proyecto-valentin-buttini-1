@@ -183,6 +183,15 @@ footer {
 .aplicandoGit:hover{
   transform: scale(1.5);
 }
+.header{
+  background-image: linear-gradient(
+    to left,
+    rgb(130, 149, 75),
+    rgb(186, 189, 66),
+    rgb(239, 211, 69),
+    rgb(255, 239, 130)
+  );
+}
 /* Biocosmetica ********************************************************************** ******************************/
 .gridBiocosmetica {
   display: grid;
