@@ -468,7 +468,8 @@ header {
 /* responsive desing media query mobile last*/
 @media (max-width: 900px) {
   .navegador li a {
-    display: none;
+    display: flex;
+    font-size: 10px;
   }
   .logo {
     width: 50px;
@@ -507,7 +508,7 @@ header {
   .seccionSegunda section h2{
     font-size: 20px;
   }
-  /* responsive desing media query mobile last biocosmetica 600px ***************************************************** */
+  /* responsive desing media query mobile last biocosmetica  ***************************************************** */
   .imagenesBiocosmetica2 {
     display: none;
   }
@@ -515,10 +516,10 @@ header {
     display: none;
   }
   .imagenesBiocosmetica1 img {
-    max-width: 145px;
+    max-width: 139px;
     padding: 15px;
   }
-  /* responsive desing media query mobile last catalogo 600px ***************************************************** * */
+  /* responsive desing media query mobile last catalogo ***************************************************** * */
   .gridCatalogo {
     max-width: 600px;
   }
@@ -556,7 +557,7 @@ header {
   .pieFoto h4 {
     display: none;
   }
-  /* responsive desing media query mobile last preparados 600px ***************************************************** */
+  /* responsive desing media query mobile last preparados  ***************************************************** */
   .sectionPreparados1 {
     grid-area: sectionPreparados1;
     display: flex;
